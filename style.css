@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+.dark {
+  background-color: rgb(38, 36, 36);
+  color: whitesmoke;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: progress;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 4px;
+  top: 4.5px;
+  border-radius: 20px;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider::before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+img {
+  height: 40px;
+  margin: 5px;
+}
+.div-themech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f44336;
+  color: white;
+  line-height: 0;
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  p {
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+  }
+}
+.todolistche {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+input[type="text"]:focus {
+  border: none;
+}
+
+button {
+  color: darkslategrey;
+  background-color: lightgrey;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 0px;
+  width: 20%;
+  height: 40px;
+}
+
+ul {
+  list-style-type: none;
+  width: 95.5%;
+  margin: 0;
+  margin-left: -40px;
+}
+
+li {
+  height: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(225, 225, 225);
+}
+li:nth-child(even) {
+  background-color: rgb(212, 203, 203);
+}

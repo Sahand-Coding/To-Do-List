@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thing</title>
+    <title>To do list</title>
+    <link
+      rel="shortcut icon"
+      href="./pic/todolisticon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="light">
@@ -20,16 +25,11 @@
     <div class="div-todolist">
       <p>To Do List</p>
       <div class="todolistche">
-        <input type="text" placeholder="Title..." />
-        <button>Add</button>
+        <input id="neveshtan" type="text" placeholder="Title..." />
+        <button onclick="additems()">Add</button>
       </div>
     </div>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-    </ul>
+    <ul id="ulasli"></ul>
   </body>
   <script src="/code.js"></script>
 </html>
